@@ -21,3 +21,22 @@ if (search) {
     });
   });
 }
+const buttons = document.querySelectorAll(".cat-btn");
+
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    const category = button.innerText.toLowerCase();
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+      if (
+        category === "all" ||
+        card.dataset.category === category
+      ) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
