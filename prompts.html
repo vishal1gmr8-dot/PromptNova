@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>PromptNova — AI Prompts</title>
 
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="logo">🚀 PromptNova</div>
+
+    <div class="logo">
+      🚀 PromptNova
+    </div>
 
     <a href="index.html" class="nav-btn">
       Home
     </a>
+
   </nav>
 
 
-  <!-- PAGE HEADER -->
+  <!-- HERO -->
   <section class="prompts-hero">
 
     <div class="badge">
@@ -32,7 +37,7 @@
 
     <p>
       Find powerful prompts for YouTube, ChatGPT, Design,
-      Coding and more.
+      Coding, Image, Social Media, Study and more.
     </p>
 
   </section>
@@ -54,18 +59,13 @@
     <div class="categories">
 
       <button class="cat-btn">All</button>
-
       <button class="cat-btn">ChatGPT</button>
-
       <button class="cat-btn">YouTube</button>
-
       <button class="cat-btn">Logo</button>
-
       <button class="cat-btn">Coding</button>
-
       <button class="cat-btn">Image</button>
-<button class="cat-btn">Social Media</button>
-<button class="cat-btn">Study</button>
+      <button class="cat-btn">Social Media</button>
+      <button class="cat-btn">Study</button>
 
     </div>
 
@@ -74,227 +74,311 @@
     <div class="prompt-grid">
 
 
-      <!-- YOUTUBE -->
+      <!-- 1 -->
       <div class="card prompt-card" data-category="youtube">
-
         <span class="prompt-tag">🎬 YouTube</span>
 
-        <h2>YouTube Script Prompt</h2>
+        <h2>YouTube Script</h2>
 
         <p id="p1">
           Write a viral YouTube Shorts script about motivation
-          in under 60 seconds with a strong hook and emotional ending.
+          with a powerful hook, simple storytelling and emotional ending.
         </p>
 
         <button onclick="copyPrompt('p1')">
           📋 Copy Prompt
         </button>
-
       </div>
 
 
-      <!-- LOGO -->
-      <div class="card prompt-card" data-category="logo">
+      <!-- 2 -->
+      <div class="card prompt-card" data-category="youtube">
+        <span class="prompt-tag">🎬 YouTube</span>
 
-        <span class="prompt-tag">🎨 Logo</span>
-
-        <h2>Logo Design Prompt</h2>
+        <h2>Viral Shorts Ideas</h2>
 
         <p id="p2">
-          Create a premium futuristic logo for an AI brand
-          named PromptNova with neon blue colors.
+          Give me 10 original YouTube Shorts ideas with strong hooks,
+          simple execution and engaging endings.
         </p>
 
         <button onclick="copyPrompt('p2')">
           📋 Copy Prompt
         </button>
-
       </div>
 
 
-      <!-- CHATGPT -->
-      <div class="card prompt-card" data-category="chatgpt">
+      <!-- 3 -->
+      <div class="card prompt-card" data-category="youtube">
+        <span class="prompt-tag">🎬 YouTube</span>
 
-        <span class="prompt-tag">🤖 ChatGPT</span>
-
-        <h2>AI Tutor Prompt</h2>
+        <h2>Video Title Generator</h2>
 
         <p id="p3">
-          Act as a friendly expert tutor. Explain any topic
-          in simple language with examples and a short quiz.
+          Generate 15 catchy YouTube titles for my video.
+          Make them short, curiosity-driven and relevant.
         </p>
 
         <button onclick="copyPrompt('p3')">
           📋 Copy Prompt
         </button>
-
       </div>
 
 
-      <!-- CODING -->
-      <div class="card prompt-card" data-category="coding">
+      <!-- 4 -->
+      <div class="card prompt-card" data-category="chatgpt">
+        <span class="prompt-tag">🤖 ChatGPT</span>
 
-        <span class="prompt-tag">💻 Coding</span>
-
-        <h2>Code Debugger Prompt</h2>
+        <h2>AI Tutor</h2>
 
         <p id="p4">
-          Act as an expert programmer. Find bugs in my code,
-          explain the problem clearly and provide a corrected version.
+          Act as a friendly expert tutor. Explain any topic
+          in simple language with examples and a short quiz.
         </p>
 
         <button onclick="copyPrompt('p4')">
           📋 Copy Prompt
         </button>
-
       </div>
-      <!-- MORE PROMPTS -->
 
-<!-- CHATGPT -->
-<div class="card prompt-card" data-category="chatgpt">
-  <span class="prompt-tag">🤖 ChatGPT</span>
-  <h2>Content Writer</h2>
-  <p id="p5">
-    Act as a professional content writer. Create clear, engaging and original content for my chosen topic and audience.
-  </p>
-  <button onclick="copyPrompt('p5')">📋 Copy Prompt</button>
-</div>
 
-<!-- CHATGPT -->
-<div class="card prompt-card" data-category="chatgpt">
-  <span class="prompt-tag">🤖 ChatGPT</span>
-  <h2>Study Helper</h2>
-  <p id="p6">
-    Explain this topic in simple language, give important points, examples and five practice questions.
-  </p>
-  <button onclick="copyPrompt('p6')">📋 Copy Prompt</button>
-</div>
+      <!-- 5 -->
+      <div class="card prompt-card" data-category="chatgpt">
+        <span class="prompt-tag">🤖 ChatGPT</span>
 
-<!-- YOUTUBE -->
-<div class="card prompt-card" data-category="youtube">
-  <span class="prompt-tag">🎬 YouTube</span>
-  <h2>Viral Shorts Ideas</h2>
-  <p id="p7">
-    Give me 10 original YouTube Shorts ideas with strong hooks, simple execution and engaging endings.
-  </p>
-  <button onclick="copyPrompt('p7')">📋 Copy Prompt</button>
-</div>
+        <h2>Content Writer</h2>
 
-<!-- YOUTUBE -->
-<div class="card prompt-card" data-category="youtube">
-  <span class="prompt-tag">🎬 YouTube</span>
-  <h2>Video Title Generator</h2>
-  <p id="p8">
-    Generate 15 catchy YouTube titles for my video. Make them short, curiosity-driven and relevant to the topic.
-  </p>
-  <button onclick="copyPrompt('p8')">📋 Copy Prompt</button>
-</div>
+        <p id="p5">
+          Act as a professional content writer. Create clear,
+          engaging and original content for my chosen topic and audience.
+        </p>
 
-<!-- LOGO -->
-<div class="card prompt-card" data-category="logo">
-  <span class="prompt-tag">🎨 Logo</span>
-  <h2>Gaming Logo</h2>
-  <p id="p9">
-    Create a professional gaming logo concept with a bold futuristic style, clean typography and strong visual identity.
-  </p>
-  <button onclick="copyPrompt('p9')">📋 Copy Prompt</button>
-</div>
+        <button onclick="copyPrompt('p5')">
+          📋 Copy Prompt
+        </button>
+      </div>
 
-<!-- LOGO -->
-<div class="card prompt-card" data-category="logo">
-  <span class="prompt-tag">🎨 Logo</span>
-  <h2>Brand Logo</h2>
-  <p id="p10">
-    Design a modern minimalist logo for my brand with a memorable symbol, premium typography and a clean professional look.
-  </p>
-  <button onclick="copyPrompt('p10')">📋 Copy Prompt</button>
-</div>
 
-<!-- CODING -->
-<div class="card prompt-card" data-category="coding">
-  <span class="prompt-tag">💻 Coding</span>
-  <h2>HTML Website Builder</h2>
-  <p id="p11">
-    Create a responsive modern HTML website with clean structure, mobile-friendly design and easy-to-edit sections.
-  </p>
-  <button onclick="copyPrompt('p11')">📋 Copy Prompt</button>
-</div>
+      <!-- 6 -->
+      <div class="card prompt-card" data-category="chatgpt">
+        <span class="prompt-tag">🤖 ChatGPT</span>
 
-<!-- CODING -->
-<div class="card prompt-card" data-category="coding">
-  <span class="prompt-tag">💻 Coding</span>
-  <h2>JavaScript Helper</h2>
-  <p id="p12">
-    Act as an expert JavaScript developer. Explain my code, find errors and provide a simple corrected solution.
-  </p>
-  <button onclick="copyPrompt('p12')">📋 Copy Prompt</button>
-</div>
+        <h2>Idea Generator</h2>
 
-      <!-- IMAGE -->
-<div class="card prompt-card" data-category="image">
-  <span class="prompt-tag">📸 Image</span>
-  <h2>AI Image Prompt</h2>
-  <p id="p13">
-    Create a highly detailed cinematic image with professional lighting,
-    realistic textures and a visually stunning composition.
-  </p>
-  <button onclick="copyPrompt('p13')">📋 Copy Prompt</button>
-</div>
+        <p id="p6">
+          Generate 20 creative and practical ideas for my topic.
+          Make each idea unique, useful and easy to execute.
+        </p>
 
-<!-- IMAGE -->
-<div class="card prompt-card" data-category="image">
-  <span class="prompt-tag">📸 Image</span>
-  <h2>Product Photo Prompt</h2>
-  <p id="p14">
-    Create a premium product photography scene with studio lighting,
-    clean composition and realistic high-quality details.
-  </p>
-  <button onclick="copyPrompt('p14')">📋 Copy Prompt</button>
-</div>
+        <button onclick="copyPrompt('p6')">
+          📋 Copy Prompt
+        </button>
+      </div>
 
-<!-- SOCIAL MEDIA -->
-<div class="card prompt-card" data-category="social media">
-  <span class="prompt-tag">📱 Social Media</span>
-  <h2>Instagram Caption</h2>
-  <p id="p15">
-    Write 10 engaging Instagram captions for my post with a natural
-    tone, strong hooks and relevant hashtags.
-  </p>
-  <button onclick="copyPrompt('p15')">📋 Copy Prompt</button>
-</div>
 
-<!-- SOCIAL MEDIA -->
-<div class="card prompt-card" data-category="social media">
-  <span class="prompt-tag">📱 Social Media</span>
-  <h2>Content Ideas</h2>
-  <p id="p16">
-    Give me 20 creative social media content ideas for my niche that
-    can increase engagement and attract new viewers.
-  </p>
-  <button onclick="copyPrompt('p16')">📋 Copy Prompt</button>
-</div>
+      <!-- 7 -->
+      <div class="card prompt-card" data-category="logo">
+        <span class="prompt-tag">🎨 Logo</span>
 
-<!-- STUDY -->
-<div class="card prompt-card" data-category="study">
-  <span class="prompt-tag">📚 Study</span>
-  <h2>Study Planner</h2>
-  <p id="p17">
-    Create a realistic study plan for my subjects with focused sessions,
-    revision time, breaks and practice questions.
-  </p>
-  <button onclick="copyPrompt('p17')">📋 Copy Prompt</button>
-</div>
+        <h2>Premium Logo</h2>
 
-<!-- STUDY -->
-<div class="card prompt-card" data-category="study">
-  <span class="prompt-tag">📚 Study</span>
-  <h2>Exam Preparation</h2>
-  <p id="p18">
-    Help me prepare for my exam by breaking the topic into important
-    concepts, quick notes, examples and practice questions.
-  </p>
-  <button onclick="copyPrompt('p18')">📋 Copy Prompt</button>
-</div>
+        <p id="p7">
+          Create a premium modern logo concept with clean typography,
+          memorable symbolism and a professional visual identity.
+        </p>
+
+        <button onclick="copyPrompt('p7')">
+          📋 Copy Prompt
+        </button>
+      </div>
+
+
+      <!-- 8 -->
+      <div class="card prompt-card" data-category="logo">
+        <span class="prompt-tag">🎨 Logo</span>
+
+        <h2>Gaming Logo</h2>
+
+        <p id="p8">
+          Create a professional gaming logo with a bold futuristic style,
+          clean typography and strong visual identity.
+        </p>
+
+        <button onclick="copyPrompt('p8')">
+          📋 Copy Prompt
+        </button>
+      </div>
+
+
+      <!-- 9 -->
+      <div class="card prompt-card" data-category="logo">
+        <span class="prompt-tag">🎨 Logo</span>
+
+        <h2>Brand Logo</h2>
+
+        <p id="p9">
+          Design a modern minimalist logo for my brand with a memorable
+          symbol, premium typography and clean professional appearance.
+        </p>
+
+        <button onclick="copyPrompt('p9')">
+          📋 Copy Prompt
+        </button>
+      </div>
+
+
+      <!-- 10 -->
+      <div class="card prompt-card" data-category="coding">
+        <span class="prompt-tag">💻 Coding</span>
+
+        <h2>Code Debugger</h2>
+
+        <p id="p10">
+          Act as an expert programmer. Find bugs in my code,
+          explain the problem clearly and provide a corrected version.
+        </p>
+
+        <button onclick="copyPrompt('p10')">
+          📋 Copy Prompt
+        </button>
+      </div>
+
+
+      <!-- 11 -->
+      <div class="card prompt-card" data-category="coding">
+        <span class="prompt-tag">💻 Coding</span>
+
+        <h2>HTML Website Builder</h2>
+
+        <p id="p11">
+          Create a responsive modern HTML website with clean structure,
+          mobile-friendly design and easy-to-edit sections.
+        </p>
+
+        <button onclick="copyPrompt('p11')">
+          📋 Copy Prompt
+        </button>
+      </div>
+
+
+      <!-- 12 -->
+      <div class="card prompt-card" data-category="coding">
+        <span class="prompt-tag">💻 Coding</span>
+
+        <h2>JavaScript Helper</h2>
+
+        <p id="p12">
+          Act as an expert JavaScript developer. Explain my code,
+          find errors and provide a simple corrected solution.
+        </p>
+
+        <button onclick="copyPrompt('p12')">
+          📋 Copy Prompt
+        </button>
+      </div>
+
+
+      <!-- 13 -->
+      <div class="card prompt-card" data-category="image">
+        <span class="prompt-tag">📸 Image</span>
+
+        <h2>Cinematic Image</h2>
+
+        <p id="p13">
+          Create a cinematic AI image with dramatic lighting,
+          realistic details, depth of field and professional composition.
+        </p>
+
+        <button onclick="copyPrompt('p13')">
+          📋 Copy Prompt
+        </button>
+      </div>
+
+
+      <!-- 14 -->
+      <div class="card prompt-card" data-category="image">
+        <span class="prompt-tag">📸 Image</span>
+
+        <h2>Product Photo</h2>
+
+        <p id="p14">
+          Create a premium product photography scene with studio lighting,
+          realistic shadows, clean background and professional composition.
+        </p>
+
+        <button onclick="copyPrompt('p14')">
+          📋 Copy Prompt
+        </button>
+      </div>
+
+
+      <!-- 15 -->
+      <div class="card prompt-card" data-category="social media">
+        <span class="prompt-tag">📱 Social Media</span>
+
+        <h2>Instagram Captions</h2>
+
+        <p id="p15">
+          Generate 20 engaging Instagram captions for my content.
+          Keep them short, natural, creative and audience-friendly.
+        </p>
+
+        <button onclick="copyPrompt('p15')">
+          📋 Copy Prompt
+        </button>
+      </div>
+
+
+      <!-- 16 -->
+      <div class="card prompt-card" data-category="social media">
+        <span class="prompt-tag">📱 Social Media</span>
+
+        <h2>Content Calendar</h2>
+
+        <p id="p16">
+          Create a 30-day social media content calendar with daily
+          post ideas, hooks and simple content suggestions.
+        </p>
+
+        <button onclick="copyPrompt('p16')">
+          📋 Copy Prompt
+        </button>
+      </div>
+
+
+      <!-- 17 -->
+      <div class="card prompt-card" data-category="study">
+        <span class="prompt-tag">📚 Study</span>
+
+        <h2>Study Helper</h2>
+
+        <p id="p17">
+          Explain this topic in simple language, give important points,
+          examples and five practice questions.
+        </p>
+
+        <button onclick="copyPrompt('p17')">
+          📋 Copy Prompt
+        </button>
+      </div>
+
+
+      <!-- 18 -->
+      <div class="card prompt-card" data-category="study">
+        <span class="prompt-tag">📚 Study</span>
+
+        <h2>Exam Preparation</h2>
+
+        <p id="p18">
+          Create a simple study plan for my exam with important topics,
+          revision sessions, practice questions and realistic daily goals.
+        </p>
+
+        <button onclick="copyPrompt('p18')">
+          📋 Copy Prompt
+        </button>
+      </div>
+
 
     </div>
 
@@ -320,4 +404,5 @@
   <script src="script.js"></script>
 
 </body>
+
 </html>
