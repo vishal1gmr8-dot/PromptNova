@@ -309,3 +309,130 @@ footer h3 {
     font-size: 28px;
   }
 }
+/* PROMPTS PAGE */
+
+.prompts-hero {
+  text-align: center;
+  padding: 70px 20px 40px;
+  background: radial-gradient(circle at top, #172554 0%, #070b17 60%);
+}
+
+.prompts-hero h1 {
+  font-size: clamp(38px, 6vw, 60px);
+  margin: 18px 0 12px;
+}
+
+.prompts-hero p {
+  color: #94a3b8;
+  max-width: 650px;
+  margin: auto;
+  font-size: 17px;
+}
+
+.prompts-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 20px 80px;
+}
+
+.prompt-search {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  background: #111827;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.prompt-search:focus {
+  border-color: #2563eb;
+}
+
+.prompt-search::placeholder {
+  color: #64748b;
+}
+
+.categories {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.cat-btn {
+  padding: 10px 17px;
+  border-radius: 25px;
+  border: 1px solid #334155;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.cat-btn:hover {
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.prompt-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.prompt-card {
+  background: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 25px;
+  transition: 0.25s;
+}
+
+.prompt-card:hover {
+  transform: translateY(-5px);
+  border-color: #2563eb;
+}
+
+.prompt-tag {
+  color: #60a5fa;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.prompt-card h2 {
+  margin: 12px 0;
+  font-size: 23px;
+}
+
+.prompt-card p {
+  color: #94a3b8;
+  margin-bottom: 22px;
+}
+
+.prompt-card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.prompt-card button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 700px) {
+  .prompt-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .prompts-hero {
+    padding-top: 50px;
+  }
+}
