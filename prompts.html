@@ -1,63 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PromptNova</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+  <title>PromptNova — AI Prompts</title>
+
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 
 <body>
 
-<header>
-<h1>🚀 PromptNova</h1>
-<p>Best AI Prompts Collection</p>
-</header>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">🚀 PromptNova</div>
 
-<div class="container">
-  <input
-  type="text"
-  id="search"
-  placeholder="🔍 Search AI Prompts..."
+    <a href="index.html" class="nav-btn">
+      Home
+    </a>
+  </nav>
+
+
+  <!-- PAGE HEADER -->
+  <section class="prompts-hero">
+
+    <div class="badge">
+      ✨ Prompt Library
+    </div>
+
+    <h1>Explore AI Prompts</h1>
+
+    <p>
+      Find powerful prompts for YouTube, ChatGPT, Design,
+      Coding and more.
+    </p>
+
+  </section>
+
+
+  <!-- PROMPTS -->
+  <main class="prompts-container">
+
+    <!-- SEARCH -->
+    <input
+      type="text"
+      id="search"
+      class="prompt-search"
+      placeholder="🔍 Search AI prompts..."
+    >
+
+
+    <!-- CATEGORIES -->
     <div class="categories">
-  <button class="cat-btn">All</button>
-  <button class="cat-btn">ChatGPT</button>
-  <button class="cat-btn">YouTube</button>
-  <button class="cat-btn">Logo</button>
-  <button class="cat-btn">Coding</button>
-</div>
-  style="width:100%;padding:12px;border-radius:8px;border:none;margin-bottom:20px;font-size:16px;">
 
-<div class="card" data-category="youtube">
-<h2>YouTube Script Prompt</h2>
+      <button class="cat-btn">All</button>
 
-<p id="p1">
-Write a viral YouTube Shorts script about motivation in under 60 seconds with a strong hook and emotional ending.
-</p>
+      <button class="cat-btn">ChatGPT</button>
 
-<button onclick="copyPrompt('p1')">
-Copy Prompt
-</button>
+      <button class="cat-btn">YouTube</button>
 
-</div>
+      <button class="cat-btn">Logo</button>
 
-<div class="card" data-category="logo">
-<h2>Logo Design Prompt</h2>
+      <button class="cat-btn">Coding</button>
 
-<p id="p2">
-Create a premium futuristic logo for an AI brand named PromptNova with neon blue colors.
-</p>
+    </div>
 
-<button onclick="copyPrompt('p2')">
-Copy Prompt
-</button>
 
-</div>
+    <!-- PROMPT GRID -->
+    <div class="prompt-grid">
 
-</div>
 
-<script src="script.js"></script>
+      <!-- YOUTUBE -->
+      <div class="card prompt-card" data-category="youtube">
+
+        <span class="prompt-tag">🎬 YouTube</span>
+
+        <h2>YouTube Script Prompt</h2>
+
+        <p id="p1">
+          Write a viral YouTube Shorts script about motivation
+          in under 60 seconds with a strong hook and emotional ending.
+        </p>
+
+        <button onclick="copyPrompt('p1')">
+          📋 Copy Prompt
+        </button>
+
+      </div>
+
+
+      <!-- LOGO -->
+      <div class="card prompt-card" data-category="logo">
+
+        <span class="prompt-tag">🎨 Logo</span>
+
+        <h2>Logo Design Prompt</h2>
+
+        <p id="p2">
+          Create a premium futuristic logo for an AI brand
+          named PromptNova with neon blue colors.
+        </p>
+
+        <button onclick="copyPrompt('p2')">
+          📋 Copy Prompt
+        </button>
+
+      </div>
+
+
+      <!-- CHATGPT -->
+      <div class="card prompt-card" data-category="chatgpt">
+
+        <span class="prompt-tag">🤖 ChatGPT</span>
+
+        <h2>AI Tutor Prompt</h2>
+
+        <p id="p3">
+          Act as a friendly expert tutor. Explain any topic
+          in simple language with examples and a short quiz.
+        </p>
+
+        <button onclick="copyPrompt('p3')">
+          📋 Copy Prompt
+        </button>
+
+      </div>
+
+
+      <!-- CODING -->
+      <div class="card prompt-card" data-category="coding">
+
+        <span class="prompt-tag">💻 Coding</span>
+
+        <h2>Code Debugger Prompt</h2>
+
+        <p id="p4">
+          Act as an expert programmer. Find bugs in my code,
+          explain the problem clearly and provide a corrected version.
+        </p>
+
+        <button onclick="copyPrompt('p4')">
+          📋 Copy Prompt
+        </button>
+
+      </div>
+
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <h3>🚀 PromptNova</h3>
+
+    <p>
+      Your free AI prompt library.
+    </p>
+
+    <p class="copyright">
+      © 2026 PromptNova. All rights reserved.
+    </p>
+
+  </footer>
+
+
+  <script src="script.js"></script>
 
 </body>
 </html>
